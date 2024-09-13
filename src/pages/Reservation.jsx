@@ -19,7 +19,7 @@ const Reservation = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://restaurent-backend-74iz.onrender.com', formData);
+            const response = await axios.post('https://restaurent-backend-74iz.onrender.com/api/v1/reservation', formData);
             toast.success('Reservation submitted successfully!');
             console.log('Reservation submitted:', response.data);
         } catch (error) {
