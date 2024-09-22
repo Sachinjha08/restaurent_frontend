@@ -15,11 +15,13 @@ import Desserts from './menu-pages/Desserts';
 import Burgers from './menu-pages/Borgers';
 import Bbqs from './menu-pages/Bbqs';
 import Pizzas from './menu-pages/Pizzas';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <Toaster position="top-right" reverseOrder={false} />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/home" element={<Home />} />
